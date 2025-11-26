@@ -148,7 +148,7 @@ class DeepSeekProcessor:
 
 def main():
     # 配置参数
-    API_KEY = "sk-f2d7b4dd3cc14a6da574ea824b64978d"  # 替换为您的DeepSeek API密钥
+    API_KEY = "YOUR_DEEPSEEK_API_KEY"  # 替换为您的DeepSeek API密钥
     DATA_FILE = "data.txt"
     RESULT_FILE = "result.txt"
     CUSTOM_PROMPT = "请分析以下文本数据，将每一行输入根据语义拆解成一个或多个条目，拆解后条目名称与原条目完全一致。每个拆解后的条目分别占一行。条目输出格式（按照格式化字符串处理）：\n{条目名称}{使用文字连贯地衔接,不要用冒号}{描述}。\n不要输出其他内容"  # 可自定义的提示词
