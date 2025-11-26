@@ -43,6 +43,9 @@ internal static class TickManagerPatch
                 false);
             _noApiKeyMessageShown = true;
         }
+
+        if (Cache.GetPlayer() == null)
+            Cache.GetPlayer().Name = new NameSingle("超凡智能");
         
         TalkService.DisplayTalk();
 

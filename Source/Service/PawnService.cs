@@ -104,7 +104,7 @@ public static class PawnService
 
     public static bool IsVisitor(this Pawn pawn)
     {
-        return pawn?.Faction != null && pawn.Faction != Faction.OfPlayer && !pawn.HostileTo(Faction.OfPlayer);
+        return pawn?.Faction != null && !pawn.IsPrisoner && pawn.Faction != Faction.OfPlayer && !pawn.HostileTo(Faction.OfPlayer);
     }
 
     public static bool IsEnemy(this Pawn pawn)
